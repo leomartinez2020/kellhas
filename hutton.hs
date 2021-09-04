@@ -57,7 +57,7 @@ producto (x:xs) = x * producto xs
 
 len :: [a] -> Int
 len [] = 0
-len (_: xs) = 1 + longo xs
+len (_: xs) = 1 + len xs
 
 revertir :: [a] -> [a]
 revertir [] = []
